@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(25, 118, 224);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 10px;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+    border: 1px solid rgb(139, 139, 139);
+    border-radius: 10px;
+}
+
+#search input {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+
+#search button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#weather-data {
+    display: none;
+}
+
+#weather-data.show{
+    display: block;
+}
+
+#weather-data h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#weather-box {
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 20px;
+    color: #fff;
+}
+
+#weather-box img {
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+#weather-box div p {
+    filter: drop-shadow(-2px 2px 5px rgba(0, 0, 0, 0.4));
+}
+
+#temperatura {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+#temperatura-desc {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#weather-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    gap: 20px
+}
+
+.info {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding: 4px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    background-color: #fff;
+}
+
+.info i {
+    font-size: 20px;
+    text-align: center;
+    width: 20%;
+}
+
+.info div h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#temp-max-icon {
+    color: #7f1d1d;;
+}
+
+#temp-min-icon {
+    color: #0284c7;
+}
+
+#humidade-icon {
+    color: #0ea5e9;
+}
+
+#wind-icon {
+    color: #7c3aed;
+}
+
+#alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 15px; */
+}

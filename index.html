@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <title>Previsão do Clima</title>
+</head>
+<body>
+    <main>
+        <form id="search">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Buscar cidade">
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <section id="weather-data">
+            <h1 id="local">Brasilia, BR</h1>
+            <div id="weather-box">
+                <img id="clima-icon" src="http://openweathermap.org/img/wn/04d@2x.png" alt="clima">
+
+                <div>
+                    <p id="temperatura">
+                        30°C
+                    </p>
+                    
+                    <p id="temperatura-desc">
+                        Ensolarado
+                    </p>
+                </div>
+            </div>
+            <div id="weather-info">
+                <div id="temp-max" class="info">
+                    <i id="temp-max-icon" class="fa-solid fa-temperature-high"></i>
+                    <div>
+                        <h3>Temp max</h3>
+                        <p>40°C</p>
+                    </div>
+                </div>
+
+                <div id="temp-min" class="info">
+                    <i id="temp-min-icon" class="fa-solid fa-temperature-low"></i>
+                    <div>
+                        <h3>Temp min</h3>
+                        <p>20°C</p>
+                    </div>
+                </div>
+
+                <div id="humidade" class="info">
+                    <i id="humidade-icon" class="fa-solid fa-droplet"></i>
+                    <div>
+                        <h3>Humidade</h3>
+                        <p>50%</p>
+                    </div>
+                </div>
+
+                <div id="vento" class="info">
+                    <i id="wind-icon" class="fa-solid fa-wind"></i>
+                    <div>
+                        <h3>Vento</h3>
+                        <p>30km/h</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="alert"></div>
+    </main>
+</body>
+</html>
